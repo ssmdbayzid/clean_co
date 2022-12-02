@@ -1,17 +1,17 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import routes from '../routes/routes'
+import Routers from '../Routers/Routers'
+// import Routers from '../Routers/Routers'
 
 const Layout = () => {
   return (
     <div>
-        <Header/>
-           <div>
-            <routes />
+        <Header>
+          <Routers/>
+        </Header>
 
-           </div>
-
+           
         <Footer/>
 
     </div>
