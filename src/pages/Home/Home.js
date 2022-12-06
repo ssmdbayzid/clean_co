@@ -1,8 +1,11 @@
 import React from 'react'
+import Landpage from './Landpage'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+    <Landpage />
+    </div>
   )
 }
 

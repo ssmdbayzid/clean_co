@@ -1,19 +1,13 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import { Home, About, Contact, Services, LogIn, SignOut } from '../pages'
 
-const Routers = () => {
-  return (
-    <Routes>      
-      <Route path='/' element={<Home />}/>
-      <Route path='/home' element={<Home />}/>
-      <Route path='/about' element={<About />}/>
-      <Route path='/contact' element={<Contact />}/>
-      <Route path='/services' element={<Services />}/>
-      <Route path='/log-in' element={<LogIn />}/>
-      <Route path='/sign-up' element={<SignOut />}/>
-    </Routes>
-  )
-}
+import { Home, About, Contact, Services, LogIn, SignOut, SignUp } from '../pages'
 
-export default Routers
+export  const publicRoute = [
+    {path:"/", name: "Home", Component: Home},
+    {path:"/home", name: "Home", Component: Home},
+    {path:'/about', name: "About", Component: About},
+    {path:"/contact", name: "Contact", Component: Contact},
+    {path:"/services", name: "Services", Component: Services},
+    {path:"/log-in", name: "Log In", Component: LogIn},
+    {path:"/log-out", name: "Log Out", Component: SignOut},
+    {path:"/sign-up", name: "Sign Up", Component: SignUp},
+  ]

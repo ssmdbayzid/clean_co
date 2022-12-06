@@ -1,6 +1,7 @@
-export {default as Home} from './Home'
+export {default as Home} from './Home/Home'
 export {default as About} from './About'
 export {default as Contact} from './Contact'
 export {default as Services} from './Services'
 export {default as LogIn} from './LogIn'
 export {default as SignOut} from './SignOut'
+export {default as SignUp} from './SignUp'
