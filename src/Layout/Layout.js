@@ -1,8 +1,8 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 import Header from '../components/Header'
-import Routers, { publicRoute } from '../Routers/Routers'
+import { publicRoute } from '../Routers/Routers'
 // import Routers from '../Routers/Routers'
 
 const Layout = () => {
@@ -15,7 +15,7 @@ const Layout = () => {
               )}  
           </Routes>        
         </Header>           
-        <Footer/>
+        {/* <Footer/> */}
 
     </div>
   )
