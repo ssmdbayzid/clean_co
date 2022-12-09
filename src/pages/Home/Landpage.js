@@ -40,7 +40,7 @@ const Landpage = () => {
         {/* shrink use for this content would not compressed for other section/div */}
         <div className='h-[70vh] shrink-0'>
         <img src={buckergirls} className="h-full shrink-0" alt='' />
-        </div>
+        </div> 
       </div>
     </div>
     <div className='relative  top-[-20px] mx-auto w-5/6 shadow bg-base-200 p-10 rounded-2xl'>
