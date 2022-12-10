@@ -2,8 +2,7 @@ import React from 'react'
 import { ImGoogle2 } from 'react-icons/im';
 
 
-const 
-LogIn = () => {
+const LogIn = () => {
   return (
     <div className="hero flex justify-center items-center h-screen bg-accent">
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

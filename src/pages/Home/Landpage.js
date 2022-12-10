@@ -5,7 +5,7 @@ import Button from '../../components/Share.js/Button'
 const Landpage = () => {
   return (
     <>
-      <div className="hero sm:h-[115vh] lg:h-[70vh] mt-16 bg-accent ">
+      <div className="hero sm:h-screen lg:h-[70vh] mt-16 bg-accent ">
       <div className="hero-content flex-col lg:flex-row">
         <div className='max-w-xl'>
             <p 
@@ -43,9 +43,9 @@ const Landpage = () => {
         </div> 
       </div>
     </div>
-    <div className='relative  top-[-20px] mx-auto w-5/6 shadow bg-base-200 p-10 rounded-2xl'>
+    <div className='relative sm:top-[-30px] md:top-[-20px] mx-auto w-5/6 shadow bg-base-200 p-10 rounded-2xl'>
       <h1 className='text-2xl mb-5 text-primary'>Get Free Estimate</h1>
-      <div className='grid md:grid-cols-3 grid-cols-1 lg:grid-cols-4 gap-3'>
+      <div className='grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-3'>
       <input type="text" placeholder="Type here" className="input input-bordered w-full" />
       <input type="text" placeholder="Type here" className="input input-bordered w-full" />
       <input type="text" placeholder="Type here" className="input input-bordered w-full" />
