@@ -2,10 +2,16 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { themeChange } from 'theme-change'
 import useAdmin from '../hooks/useAdmin'
+import { useLocation } from 'react-router-dom'
+
 
 const Header = ({children}) => {
 
   const [admin] = useAdmin()
+
+  const {pathname} = useLocation()
+
+
   return (
     <div className="drawer drawer-end">
   <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
@@ -13,11 +19,11 @@ const Header = ({children}) => {
     
     <div className="w-full navbar fixed bg-base-100 px-5 z-50">
     
-      <label 
+      {pathname.includes("dashboard") && <label 
       htmlFor="my-drawer-2"
       tabIndex={0} className="btn btn-ghost lg:hidden btn-circle">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-      </label>
+      </label>}
       <div className="flex-1 px-2 mx-2 text-2xl font-bold text-primary">Clean Co.
       </div>
       <div className="flex-none lg:hidden">
@@ -60,11 +66,12 @@ const Header = ({children}) => {
   </div> 
   <div className="drawer-side md:none lg:hidden">
     <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
-    <ul className="menu p-4 w-80 bg-base-100">
-      
+    <ul className="menu p-4 w-80 bg-base-100">      
+    <li className='mt-3'><NavLink to="/home">Home</NavLink></li>
     <li className='mt-3'><NavLink to="/services">Services</NavLink></li>
     <li className='mt-3'><NavLink to="/about">About</NavLink></li>
     <li className='mt-3'><NavLink to="/contact">Contact</NavLink></li>
+    {admin && <li><NavLink to="/dashboard" className="rounded-lg">Dashboard</NavLink></li>}
     <li className='mt-3'><NavLink to="/log-in">Log In</NavLink></li>
     <li className='mt-3'><NavLink to="/sign-up">Sign Up</NavLink></li>
 

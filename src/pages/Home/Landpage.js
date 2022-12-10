@@ -5,7 +5,7 @@ import Button from '../../components/Share.js/Button'
 const Landpage = () => {
   return (
     <>
-      <div className="hero sm:h-screen lg:h-[70vh] mt-16 bg-accent ">
+      <div className="hero sm:h-screen lg:h-[80vh] mt-16 bg-accent ">
       <div className="hero-content flex-col lg:flex-row">
         <div className='max-w-xl'>
             <p 
@@ -38,12 +38,12 @@ const Landpage = () => {
           >Get Start</button>
         </div>
         {/* shrink use for this content would not compressed for other section/div */}
-        <div className='h-[70vh] shrink-0'>
+        <div className='h-[80vh] shrink-0'>
         <img src={buckergirls} className="h-full shrink-0" alt='' />
         </div> 
       </div>
     </div>
-    <div className='relative sm:top-[-30px] md:top-[-20px] mx-auto w-5/6 shadow bg-base-200 p-10 rounded-2xl'>
+    <div className='relative top-[-30px] md:top-[-20px] mx-auto w-5/6 shadow bg-base-200 p-10 rounded-2xl'>
       <h1 className='text-2xl mb-5 text-primary'>Get Free Estimate</h1>
       <div className='grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-3'>
       <input type="text" placeholder="Type here" className="input input-bordered w-full" />
