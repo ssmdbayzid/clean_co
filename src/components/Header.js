@@ -38,7 +38,7 @@ const Header = ({children}) => {
           <li><NavLink to="/services" className="rounded-lg">Services</NavLink></li>
           <li><NavLink to="/about" className="rounded-lg">About</NavLink></li>
           <li><NavLink to="/contact" className="rounded-lg">Contact</NavLink></li>
-          {admin && <li><NavLink to="/dashboard" className="rounded-lg">Dashboard</NavLink></li>}
+          {admin && <li><NavLink to="/dashboard/add-service" className="rounded-lg">Dashboard</NavLink></li>}
           <li><NavLink to="/log-in" className="rounded-lg">Log In</NavLink></li>
           <li><NavLink to="/sign-up" className="rounded-lg">Sign Up</NavLink></li>
           <li className='dropdown dropdown-hover dropdown-end'>            

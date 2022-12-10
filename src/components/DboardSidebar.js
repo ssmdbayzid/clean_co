@@ -1,13 +1,13 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Outlet} from 'react-router-dom'
 
-const DboardSidebar = ({children}) => {
+const DboardSidebar = () => {
   return (
     <div className="drawer drawer-mobile bg-accent">
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 
   <div className="drawer-content flex flex-col items-center justify-center">
-    {children}
+   <Outlet />
   </div> 
 
   <div className="drawer-side ">
@@ -16,8 +16,8 @@ const DboardSidebar = ({children}) => {
     <h1 className='text-center text-2xl text-primary font-bold'>Dashboard</h1> 
     <ul className="menu   mt-5 p-2 text-base-content">
       
-    <li className='mt-3'><NavLink to="/dashboard/add-service">Add Services</NavLink></li>
-    <li className='mt-3'><NavLink to="/dashboard/add-admin">Add Admin</NavLink></li>
+    <li className='mt-3'><NavLink to="add-service">Add Services</NavLink></li>
+    <li className='mt-3'><NavLink to="add-admin">Add Admin</NavLink></li>
     
     </ul>
     </div>

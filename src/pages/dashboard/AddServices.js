@@ -3,11 +3,7 @@ import React from 'react'
 const AddServices = () => {
   return (
     <div>
-      <h1>AddServices</h1>
-      <h1>AddServices</h1>
-      <h1>AddServices</h1>
-      <h1>AddServices</h1>
-      <h1>AddServices</h1>
+      <h1>Add Services</h1>      
       </div>
   )
 }

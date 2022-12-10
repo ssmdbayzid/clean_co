@@ -28,10 +28,10 @@ const Layout = () => {
             </Route>)}
             <Route element={<AdminRoute/>}>
               <Route path='/dashboard' element={<Dashboard />}>
-                <Route path='add-admin' element={AddAdmin}/>
-                <Route path='add-service' element={AddServices}/>
+                <Route path='add-admin' index element={<AddAdmin />}/>
+                <Route path='add-service' element={<AddServices />}/>
               </Route>
-            </Route>          
+              </Route>          
           </Routes>  
         </Header>           
         {/* <Footer/> */}
